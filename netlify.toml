@@ -1,0 +1,8 @@
+[build]
+  publish = "."
+
+# Inject GROQ_API_KEY as a JS global at runtime
+[[headers]]
+  for = "/app.js"
+  [headers.values]
+    Cache-Control = "no-cache"
